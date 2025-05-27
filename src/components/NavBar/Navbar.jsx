@@ -1,16 +1,17 @@
 import React from 'react'
 import "./Navbar.css"
 import bookmarkLogo from "../../assets/Imagenes/logo-bookmark.svg"
+import hamburger from "../../assets/Imagenes/icon-hamburger.svg"
 
 function Navbar() {
   return (
     <>
-      <header class="flex">
+      <header className="flex">
         <div className="bookmark">
-            <img src="{bookmarkLogo}" alt="logo bookmark"/>
+            <img src= {bookmarkLogo} alt="logo bookmark"/>
         </div>
         <div className="menu-hamburguer">
-            <img src="../../assets/Imagenes/icon-hamburguer.svg" alt="icon-hamburger"/>
+            <img src= {hamburger} alt="icon-hamburger"/>
         </div>
         <nav className="menu">
             <ul className="flex">

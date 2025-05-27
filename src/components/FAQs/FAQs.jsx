@@ -1,9 +1,22 @@
 import React from 'react'
 import "./FAQs.css"
+import iconArrow from "../../assets/Imagenes/icon-arrow.svg"
 
 function FAQs() {
   return (
-    <div>FAQs</div>
+    <section className="FAQs">
+        <div className="text-center text-margin">
+            <h2>Frequently asked questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+            <ul className="flex">
+                <li>What is Bookmark? <img src={iconArrow} alt="icon-arrow"/></li> 
+                <li>How can I request a new browser? <img src={iconArrow} alt="icon-arrow"/></li>
+                <li>Is there a mobile app? <img src={iconArrow} alt="icon-arrow"/></li>
+                <li>What about other Chromium browsers? <img src={iconArrow} alt="icon-arrow"/></li>
+            </ul>
+            <button className="btn-azul-centered">More info</button>
+        </div>
+    </section>
   )
 }
 

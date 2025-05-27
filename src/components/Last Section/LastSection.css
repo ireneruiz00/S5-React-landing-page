@@ -1,0 +1,21 @@
+.last-section{
+    background:#344CB7;
+    color: #ffffff;
+    width: 100%;
+}
+
+.last-section-content{
+    padding: 5% 10%;
+}
+
+.last-section p{
+    color:white;
+}
+
+.last-section input{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    color: #F8FAFC;
+}
