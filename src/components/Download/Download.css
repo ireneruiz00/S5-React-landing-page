@@ -4,11 +4,11 @@
 
 .container{
     margin: 5% auto;
-    width: 60%;
+    width: 70%;
     height: 500px;
 }
 
-.columna{
+.card{
     padding: 5% 3% 3% 3%;
     margin: 0 auto;
     border-radius: 10px;
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-.columna img[alt="bg-dots"] {
+.card img[alt="bg-dots"] {
     display: block;
     margin: 7% auto;
     width: 100%;
@@ -40,7 +40,7 @@
         height: 100%;
     }
     
-    .columna {
+    .card {
         width: 90%;
         margin-top: 10%;
     }

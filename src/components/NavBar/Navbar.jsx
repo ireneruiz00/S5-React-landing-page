@@ -2,6 +2,7 @@ import React from 'react'
 import "./Navbar.css"
 import bookmarkLogo from "../../assets/Imagenes/logo-bookmark.svg"
 import hamburger from "../../assets/Imagenes/icon-hamburger.svg"
+import Buttons from '../Buttons/Buttons'
 
 function Navbar() {
   return (
@@ -18,8 +19,9 @@ function Navbar() {
                 <li><a href="#" className="nav-enlace">FEATURES</a></li>
                 <li><a href="#" className="nav-enlace">PRICING</a></li>
                 <li><a href="#" className="nav-enlace">CONTACT</a></li>
-                <li><button className="btn-naranja">LOGIN</button></li>
+                <li><Buttons button_class = {'btn-naranja'} button_content = {'LOGIN'}/></li>
             </ul>
+            
         </nav>
     </header>
     </>

@@ -4,6 +4,7 @@ import logoChrome from "../../assets/Imagenes/logo-chrome.svg"
 import logoFirefox from "../../assets/Imagenes/logo-firefox.svg"
 import logoOpera from "../../assets/Imagenes/logo-opera.svg"
 import bgDots from "../../assets/Imagenes/bg-dots.svg"
+import Cards from '../Cards/Cards'
 
 function Download() {
   return (
@@ -13,27 +14,9 @@ function Download() {
             <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
         <div className="flex container">
-            <div className="columna chrome">
-                <img src={logoChrome} alt="logo chrome"/>
-                <h4>Add to Chrome</h4>
-                <p>Minimum version 62</p>
-                <img src={bgDots} alt="bg-dots"/>
-                <button className="btn-azul-centered">Add & Install Extension</button>
-            </div>
-            <div className="columna firefox">
-                <img src={logoFirefox} alt="logo firefox"/>
-                <h4>Add to Firefox</h4>
-                <p>Minimum version 55</p>
-                <img src={bgDots} alt="bg-dots"/>
-                <button className="btn-azul-centered">Add & Install Extension</button>
-            </div>
-            <div className="columna opera">
-                <img src={logoOpera} alt="logo opera"/>
-                <h4>Add to Opera</h4>
-                <p>Minimum version 46</p>
-                <img src={bgDots} alt="bg-dots"/>
-                <button className="btn-azul-centered">Add & Install Extension</button>
-            </div>
+            <Cards logo = {'chrome'} img_logo = {logoChrome} alt_logo={'logo Chrome'} h4_content={'Add to Chrome'} p_content = {'Minimum version 62'}/>
+            <Cards logo = {'firefox'} img_logo = {logoFirefox} alt_logo={'logo Firefox'} h4_content={'Add to Firefox'} p_content = {'Minimum version 55'}/>
+            <Cards logo = {'opera'} img_logo = {logoOpera} alt_logo={'logo Opera'} h4_content={'Add to Opera'} p_content = {'Minimum version 66'}/>
         </div>
     </section>
   )
