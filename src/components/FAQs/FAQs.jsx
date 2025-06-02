@@ -1,6 +1,7 @@
 import React from 'react'
 import "./FAQs.css"
 import iconArrow from "../../assets/Imagenes/icon-arrow.svg"
+import Buttons from '../Buttons/Buttons'
 
 function FAQs() {
   return (
@@ -14,7 +15,7 @@ function FAQs() {
                 <li>Is there a mobile app? <img src={iconArrow} alt="icon-arrow"/></li>
                 <li>What about other Chromium browsers? <img src={iconArrow} alt="icon-arrow"/></li>
             </ul>
-            <button className="btn-azul-centered">More info</button>
+            <Buttons button_class = {'btn-azul-centered'} button_content = {'More info'}/>
         </div>
     </section>
   )
