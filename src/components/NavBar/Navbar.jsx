@@ -12,7 +12,7 @@ function Navbar() {
             <img src= {bookmarkLogo} alt="logo bookmark"/>
         </div>
         <div className="menu-hamburguer">
-            <img src= {hamburger} alt="icon-hamburger"/>
+            <button><img src= {hamburger} alt="icon-hamburger"/></button>
         </div>
         <nav className="menu">
             <ul className="flex">

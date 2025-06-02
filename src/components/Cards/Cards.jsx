@@ -4,7 +4,7 @@ import bgDots from "../../assets/Imagenes/bg-dots.svg"
 
 function Cards(props) {
   return (
-    <div className={`${props.logo} card`}>
+    <div className={`${props.logo_class} card`}>
         <img src={props.img_logo} alt={props.alt_logo} />
         <h4>{props.h4_content}</h4>
         <p>{props.p_content}</p>

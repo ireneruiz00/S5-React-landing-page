@@ -12,7 +12,7 @@
 .FAQs ul li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 3%;
     border-bottom: 1px solid #ddd;
 }

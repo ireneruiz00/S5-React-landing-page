@@ -3,7 +3,6 @@ import "./Download.css"
 import logoChrome from "../../assets/Imagenes/logo-chrome.svg"
 import logoFirefox from "../../assets/Imagenes/logo-firefox.svg"
 import logoOpera from "../../assets/Imagenes/logo-opera.svg"
-import bgDots from "../../assets/Imagenes/bg-dots.svg"
 import Cards from '../Cards/Cards'
 
 function Download() {
@@ -14,9 +13,11 @@ function Download() {
             <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
         <div className="flex container">
-            <Cards logo = {'chrome'} img_logo = {logoChrome} alt_logo={'logo Chrome'} h4_content={'Add to Chrome'} p_content = {'Minimum version 62'}/>
-            <Cards logo = {'firefox'} img_logo = {logoFirefox} alt_logo={'logo Firefox'} h4_content={'Add to Firefox'} p_content = {'Minimum version 55'}/>
-            <Cards logo = {'opera'} img_logo = {logoOpera} alt_logo={'logo Opera'} h4_content={'Add to Opera'} p_content = {'Minimum version 66'}/>
+            <Cards logo_class = {'chrome'} img_logo = {logoChrome} alt_logo={'logo Chrome'} h4_content={'Add to Chrome'} p_content = {'Minimum version 62'}/>
+
+            <Cards logo_class = {'firefox'} img_logo = {logoFirefox} alt_logo={'logo Firefox'} h4_content={'Add to Firefox'} p_content = {'Minimum version 55'}/>
+
+            <Cards logo_class = {'opera'} img_logo = {logoOpera} alt_logo={'logo Opera'} h4_content={'Add to Opera'} p_content = {'Minimum version 66'}/>
         </div>
     </section>
   )

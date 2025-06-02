@@ -16,8 +16,8 @@ function Footer() {
             </nav>
         </div>
         <div className="logos-footer">
-            <img src={iconFacebook} alt="facebook logo" className="fb-logo"/>
-            <img src={iconTwitter} alt="twitter logo" className="tt-logo"/>
+            <a href="#"><img src={iconFacebook} alt="facebook logo" className="fb-logo"/></a>
+            <a href="#"><img src={iconTwitter} alt="twitter logo" className="tt-logo"/></a>
         </div>
     </footer>
   )
