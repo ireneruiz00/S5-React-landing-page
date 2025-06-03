@@ -34,7 +34,7 @@ This project is a first exercise using **React** to rebuild the landing page fro
 src/
 ├── assets/                # Static files (images, etc.)
 ├── components/            # All UI components, grouped by sections        
-│   ├── 00-Buttons/           # Reusable atoms across sections.
+│   ├── 00-Buttons/        # Reusable atoms across sections.
 │   ├── 01-Navbar/               
 │   ├── 02-Hero/           
 │   ├── 03-Features/
@@ -45,8 +45,8 @@ src/
 │   ├── 08-Last Section/           
 │   └── 09-Footer/         
 ├── styles/                # Global styles
-├── App.tsx                # Root component
-├── main.tsx               # Entry point
+App.tsx                # Root component
+main.tsx               # Entry point
 ```
 
 ---
