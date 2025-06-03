@@ -1,0 +1,91 @@
+.features{
+    padding: 3% 15%;
+}
+.features .tabs {
+    text-align: center;
+  }
+  .radio-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 15%;
+    gap: 1%;
+  }
+  .tabs input {
+    display: none;
+  }
+  .tab-link {
+    width: 30%;
+    padding: 15px 20px;
+    color: #9AA6B2;
+    border-bottom: 1px solid #9AA6B2;
+  }
+  .tab-link:hover {
+    color: salmon;
+    cursor: pointer;
+  }
+  .tab-link.active{
+    color: #3D3D3D;
+    font-weight: bold;
+    border-bottom: 3px solid salmon;
+  }
+  
+  .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .tab-content.active {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 10%;
+  }
+
+  .izq-ft img{
+    width: 450px;
+  }
+  
+  .der-ft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3% 10%;
+    text-align: left;
+  }
+  
+  @media (max-width: 724px) {
+    .features {
+      padding: 3%;
+    }
+    .radio-selector {
+      flex-wrap: wrap;
+    }
+    .tab-link {
+      width: 100%;
+    }
+    .tab-content {
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    .tab-content img {
+      max-width: 100%;
+      display: block;
+      overflow-x: hidden;
+    }
+    .der-ft h2 {
+      align-self: center;
+    }
+    .der-ft p {
+      text-align: center;
+    }
+    .der-ft button {
+      display: none;
+    }
+  }
+
