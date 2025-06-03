@@ -56,8 +56,9 @@
     border: 1px solid #344CB7;
 } 
 
-.btn-hamburguer{
+.btn-hamburguer, .btn-arrow{
     background: none;
     border: none;
     cursor: pointer;
 }
+
