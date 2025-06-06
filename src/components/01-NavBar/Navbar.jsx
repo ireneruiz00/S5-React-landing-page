@@ -1,13 +1,14 @@
 import React from 'react'
 import "./Navbar.css"
 import bookmarkLogo from "../../assets/Imagenes/logo-bookmark.svg"
-import hamburger from "../../assets/Imagenes/icon-hamburger.svg"
 import Buttons from '../00-Buttons/Buttons'
-import { useState } from 'react'
-import closeIcon from "../../assets/Imagenes/icon-close.svg"
+import useMenu from '../../hooks/useMenu'
+
+
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const {menuOpen, setMenuOpen, displayHamburger, displayMenu} = useMenu()
+
   return (
     <>
       <header className='flex'>
@@ -17,11 +18,11 @@ function Navbar() {
 
         <div className="menu-hamburguer">
             <button className="btn-hamburguer" onClick={() => setMenuOpen(!menuOpen)}>
-              <img src= { menuOpen ? closeIcon : hamburger} alt="icon-hamburger"/>
+              <img src= {displayHamburger()} alt="icon-hamburger"/>
             </button>
 
         </div>
-        <nav className={`menu ${menuOpen ? "active" : ""}`}>
+        <nav className={`menu ${displayMenu()}`}>
             <ul className="flex">
                 <li><a href="#" className="nav-enlace">FEATURES</a></li>
                 <li><a href="#" className="nav-enlace">PRICING</a></li>

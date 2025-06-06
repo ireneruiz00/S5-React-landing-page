@@ -4,7 +4,7 @@ import iconArrow from "../../assets/Imagenes/icon-arrow.svg"
 import Buttons from '../00-Buttons/Buttons'
 import "../00-Buttons/Buttons.css"
 import { useState } from 'react'
-import { FaqData } from './FaqData'
+import faqData from "../../data/faqData.json"
 
 function FAQs() {
   const [itemExpanded, setItemExpanded] = useState(null)
@@ -19,7 +19,7 @@ function FAQs() {
             <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
           </div>
             <ul className="flex">
-              {FaqData.map((item, index) =>
+              {faqData.map((item, index) =>
                 <li key={index} className={`faq-item ${itemExpanded === index ? 'active' : ''}`}>
                   <div className="faq-question" onClick={() => toggleItem(index)}>
                     {item.question}
