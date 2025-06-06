@@ -1,14 +1,13 @@
-import React from 'react'
 import { useState } from "react" 
-import { TabsData } from './TabsData'
 import Buttons from '../00-Buttons/Buttons'
+import tabsData from "../../data/tabsData.json"
 
 function Tab() {
   const [activeTab, setActive] = useState(0)
     return (
     <>
         <div className = "radio-selector">
-            {TabsData.map((tab, index) => (
+            {tabsData.map((tab, index) => (
                 <label key={index}
                 className={`tab-link ${activeTab === index ? 'active': ''}`}
                 onClick={() => setActive(index)}
@@ -20,11 +19,11 @@ function Tab() {
         </div>
         <div className='tab-content active'>
             <div className={activeTab === 0 ? 'izq-ft': ''}>
-                <img src={TabsData[activeTab].img} alt={TabsData[activeTab].title}/>
+                <img src={tabsData[activeTab].img} alt={tabsData[activeTab].title}/>
             </div>
             <div className = 'der-ft'>
-                <h2>{TabsData[activeTab].title}</h2>
-                <p>{TabsData[activeTab].text}</p>
+                <h2>{tabsData[activeTab].title}</h2>
+                <p>{tabsData[activeTab].text}</p>
                 <Buttons button_class = {'btn-azul'} button_content = {'More info'}/>
             </div>
         </div>
